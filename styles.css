@@ -1,0 +1,171 @@
+body {
+  background-image: linear-gradient(pink,skyblue);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: "papyrus", fantasy;
+  color: #333333;
+}
+ .container {
+  margin: 0 auto;
+  width: 90%;
+  background: #FFFFFF;
+  border-radius: 100px;
+  overflow: hidden;
+  display: flex;
+  flex: 1 1 70%;
+  align-items: left;
+  box-shadow: 0 0 20px 6px #090b6f85;
+}
+
+.container div {
+  height: auto;
+}
+
+.box-form .left {
+  color: #FFFFFF;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.container .left .layout {
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  background: #dca5cc;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.container .left .layout h1 {
+  font-size: 10vmax;
+  line-height: 1;
+  font-weight: 900;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.container .left .layout span p {
+  margin-top: 30px;
+  font-weight: 900;
+}
+
+.container .left .layout span a {
+  background:linear-gradient(pink,purple);
+  color: #FFFFFF;
+  margin-top: 20px;
+  padding: 20px 60px;
+  border-radius: 200px;
+  display: inline-block;
+  box-shadow: 0 3px 6px 1px #042d4657;
+}
+
+ 
+
+.container .right {
+  padding: 40px;
+  overflow: hidden;
+}
+
+ 
+
+.container .right h5 {
+  font-size: 6vmax;
+  line-height: 0;
+}
+
+.container .right p {
+  font-size: 14px;
+  color: #B0B3B9;
+}
+
+.container .right .inputs {
+  overflow: hidden;
+}
+
+.container .right input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 25px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  border-bottom: 3px solid #B0B3B9;
+}
+
+.container .right .forget password {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ }
+
+.container.right .forget password input {
+  margin: 0;
+  margin-right: 7px;
+  width: auto;
+  cursor:pointer;
+}
+
+.container .right button {
+ float: right;
+  font-size: 16px;
+  padding: 12px 35px;
+  border-radius: 50px;
+  display: inline-block;
+  border: 0;
+  outline: 0;
+  color:linear-gradient(pink,purple)
+}
+
+ 
+
+label {
+  display: block;
+  position: relative;
+  margin-left: 30px;
+}
+
+ 
+
+label::before {
+  content: ' \f00c';
+  position: absolute;
+  font-family: FontAwesome;
+  background: transparent;
+  border: 3px solid #000000;
+  border-radius: 4px;
+  color: transparent;
+  left: -30px;
+  transition: all 0.2s linear;
+}
+
+label:hover::before {
+  font-family: FontAwesome;
+  content: ' \f00c';
+  color: #000000;
+  cursor: pointer;
+  background: #d4a7b4;
+}
+
+ 
+
+label:hover::before .text-checkbox {
+  background: #d4a7b4;
+}
+
+ 
+
+label span.text-checkbox {
+  display: inline-block;
+  height: auto;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+
+ 
+
+label input[type="checkbox"] {
+  display: none;
+}
